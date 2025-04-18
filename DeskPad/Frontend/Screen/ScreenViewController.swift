@@ -13,7 +13,7 @@ class ScreenViewController: SubscriberViewController<ScreenViewData>, NSWindowDe
     }
 
     private var display: [CGVirtualDisplay]!
-//    private var stream: CGDisplayStream?
+    private var stream: CGDisplayStream?
     private var isWindowHighlighted = false
     private var previousResolution: CGSize?
     private var previousScaleFactor: CGFloat?
@@ -23,7 +23,7 @@ class ScreenViewController: SubscriberViewController<ScreenViewData>, NSWindowDe
 
         let descriptor = CGVirtualDisplayDescriptor()
         descriptor.setDispatchQueue(DispatchQueue.main)
-        descriptor.name = "DeskPad Display"
+        descriptor.name = "TDS DeskPad Display"
         descriptor.maxPixelsWide = 3840
         descriptor.maxPixelsHigh = 2160
         descriptor.sizeInMillimeters = CGSize(width: 1600, height: 1000)
@@ -74,25 +74,25 @@ class ScreenViewController: SubscriberViewController<ScreenViewData>, NSWindowDe
         {
             previousResolution = viewData.resolution
             previousScaleFactor = viewData.scaleFactor
-//            stream = nil
-//            view.window?.setContentSize(viewData.resolution)
-//            view.window?.contentAspectRatio = viewData.resolution
-//            view.window?.center()
-//            let stream = CGDisplayStream(
-//                dispatchQueueDisplay: display.displayID,
-//                outputWidth: Int(viewData.resolution.width * viewData.scaleFactor),
-//                outputHeight: Int(viewData.resolution.height * viewData.scaleFactor),
-//                pixelFormat: 1_111_970_369,
-//                properties: nil,
-//                queue: .main,
-//                handler: { [weak self] _, _, frameSurface, _ in
-//                    if let surface = frameSurface {
-//                        self?.view.layer?.contents = surface
-//                    }
-//                }
-//            )
-//            self.stream = stream
-//            stream?.start()
+            stream = nil
+            view.window?.setContentSize(viewData.resolution)
+            view.window?.contentAspectRatio = viewData.resolution
+            view.window?.center()
+            let stream = CGDisplayStream(
+                dispatchQueueDisplay: display[0].displayID,
+                outputWidth: Int(viewData.resolution.width * viewData.scaleFactor),
+                outputHeight: Int(viewData.resolution.height * viewData.scaleFactor),
+                pixelFormat: 1_111_970_369,
+                properties: nil,
+                queue: .main,
+                handler: { [weak self] _, _, frameSurface, _ in
+                    if let surface = frameSurface {
+                        self?.view.layer?.contents = surface
+                    }
+                }
+            )
+            self.stream = stream
+            stream?.start()
         }
     }
 

@@ -2,7 +2,7 @@
 //  CGVirtualDisplayPrivate.h
 //  VirtualDisplayExp
 //
-//  Created by Khaos Tian on 2/17/21.
+//  Created by Thomas Dye
 //
 
 #import <Cocoa/Cocoa.h>
