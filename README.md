@@ -1,6 +1,6 @@
 <h3 align="center">
-  <a href="https://github.com/thomasdye12/DeskPad/blob/main/DeskPad/Assets.xcassets/AppIcon.appiconset/Icon-256.png">
-  <img src="https://github.com/thomasdye12/DeskPad/blob/main/DeskPad/Assets.xcassets/AppIcon.appiconset/Icon-256.png?raw=true" alt="DeskPad Icon" width="128">
+  <a href="https://github.com/thomasdye12/DeskPad/blob/master/DeskPad/Assets.xcassets/AppIcon.appiconset/Icon-256.png">
+  <img src="https://github.com/thomasdye12/DeskPad/blob/master/DeskPad/Assets.xcassets/AppIcon.appiconset/Icon-256.png?raw=true" alt="DeskPad Icon" width="128">
   </a>
 </h3>
 
@@ -28,7 +28,7 @@ You can change the display resolution through the system preferences and the app
 Whenever you move your mouse cursor to the virtual display, DeskPad will highlight its title bar in blue and move the application window to the front to let you know where you are.
 
 <h3 align="center">
-  <a href="https://github.com/thomasdye12/DeskPad/blob/main/demonstration.gif">
-  <img src="https://github.com/thomasdye12/DeskPad/blob/main/demonstration.gif?raw=true" alt="DeskPad Demonstration">
+  <a href="https://github.com/thomasdye12/DeskPad/blob/master/demonstration.gif">
+  <img src="https://github.com/thomasdye12/DeskPad/blob/master/demonstration.gif?raw=true" alt="DeskPad Demonstration">
   </a>
 </h3>
