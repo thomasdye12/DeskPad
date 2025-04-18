@@ -8,8 +8,8 @@
 A virtual monitor for screen sharing
 
 <h3 align="center">
-  <a href="https://github.com/thomasdye12/DeskPad/blob/main/screenshot.jpg">
-  <img src="https://github.com/thomasdye12/DeskPad/blob/main/screenshot.jpg?raw=true" alt="DeskPad Screenshot">
+  <a href="https://github.com/thomasdye12/DeskPad/blob/master/screenshot.jpg">
+  <img src="https://github.com/thomasdye12/DeskPad/blob/master/screenshot.jpg?raw=true" alt="DeskPad Screenshot">
   </a>
 </h3>
 
